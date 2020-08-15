@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0" />
+    <title>Sorting Visualizer Tool</title>
+    <link href="./css/style.css" type="text/css" rel="stylesheet" />
+    
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1 class="nav-heading">
+          <p style="color : #ffffff;">Sorting</p>
+          <p style="color : #00ff40;">Visualizer</p>
+        </h1>
+        <div style="width:100%; height: 2px; background-color: white;"></div>
+        <div class="array-inputs">
+          <p style = "text-align: center;">Size of the array :<span style="color: rgb(0, 255, 0)"id= "array_size"> 80</span></span></p>
+          <br>
+          <input
+            id="sizes"
+            type="range"
+            min="20"
+            max="150"
+            step="1"
+            value="80"
+            class="slider"
+            oninput = "changeSize(this.value)"
+          />
+          <p style = "text-align: center;">Speed of the algorithm:<span style="color: rgb(0, 255, 0)"id = "speed">4</span></p>
+          <br>
+          <input
+            
+            id="speeds"
+            type="range"
+            min="1"
+            max="5"
+            step="1"
+            value="4"
+            class="slider"
+            oninput = "changeSpeed(this.value)"
+            
+          />
+          <br>
+        </div>
+        <div style="width:100%; height: 6px; background-color: black;"></div>
+        <div style="width:100%; height: 2px; background-color: white;"></div>
+      </nav>
+        
+    </header>
+    <div class = "container">
+        
+        <div class = "menu">
+            <button class="generate">Generate New Array</button>
+
+            
+            <div class="algo">
+              <button class = "alg">Bubble Sort</button>
+              <br>
+              <button class = "alg">Selection Sort</button>
+              <br>
+              <button class = "alg">Insertion Sort</button>
+              <br>
+              <button class = "alg">Merge Sort</button>
+              <br>
+              <button class = "alg">Heap Sort</button>
+              <br>
+              <button class = "alg">Quick Sort</button>
+            </div>
+           
+        </div>
+        <div class = "chart">
+
+        </div>
+       
+
+    </div>
+    
+    </div>
+  </body>
+  <script  language="Javascript" src = "./scripts/main.js"></script>
+  <script src = "./scripts/visualization.js"></script>
+  
+  <script src = "./scripts/bubble_sort.js"></script>
+  <script src = "./scripts/selection_sort.js"></script>
+  <script src = "./scripts/insertion_sort.js"></script>
+  <script src = "./scripts/merge_sort.js"></script>
+  <script src = "./scripts/heap_sort.js"></script>
+  <script src = "./scripts/quick_sort.js"></script>
+
+  </html>
+

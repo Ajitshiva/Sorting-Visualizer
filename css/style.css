@@ -1,0 +1,212 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+}
+nav .nav-heading {
+  color: green;
+  font-weight: bold;
+  font-size: 40px;
+  height: 12vh;
+  opacity: 1;
+  padding-top: 10px;
+  background-image: linear-gradient(to right, black, black, rgb(0, 255, 191));
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+}
+nav .nav-heading p {
+  display: inline;
+}
+nav .array-inputs {
+  width: 100%;
+  background-color: black;
+  height: 23vh;
+}
+nav .array-inputs p {
+  padding-top: 10px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+}
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 8px;
+  background-image: linear-gradient(
+    to right,
+    rgb(0, 255, 255),
+    rgb(0, 255, 213)
+  );
+  outline: none;
+  border-radius: 10px;
+  opacity: 0.9;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+  cursor: pointer;
+  border: 2px solid white;
+}
+.slider:hover {
+  opacity: 1;
+  background: rgb(0, 255, 0);
+}
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #ff0000;
+  cursor: pointer;
+}
+.slider::-webkit-slider-thumb:hover {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: rgb(0, 255, 0);
+  cursor: pointer;
+}
+.container {
+  background: aqua;
+  display: grid;
+  grid-template-areas: "menu chart";
+  grid-gap: 5px;
+  max-width: 180px;
+  line-height: 30px;
+  height: 100vh;
+  padding-left: 10px;
+}
+
+.algo {
+  min-width: 160px;
+}
+.algo a {
+  color: black;
+  text-decoration: none;
+  display: block;
+}
+
+.menu {
+  grid-area: menu;
+  display: inline-block;
+}
+
+.generate {
+  background: rgb(0, 77, 0);
+  color: white;
+  height: 6vh;
+  margin: 20px 0px;
+  padding: 5px;
+  border: 3px solid rgb(255, 255, 255);
+  cursor: pointer;
+  border-radius: 15px;
+}
+.generate_locked
+{
+  background: rgb(126, 126, 126);
+  color: white;
+  height: 6vh;
+  margin: 20px 0px;
+  padding: 5px;
+  border: 3px solid rgb(255, 255, 255);
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+.alg {
+  background: rgb(0, 77, 0);
+  color: white;
+  height: 6vh;
+  margin-top: 5px;
+  float: left;
+  padding: 5px;
+  left: 10px;
+  width: 160px;
+  border: 3px solid rgb(255, 255, 255);
+  cursor: pointer;
+  border-radius: 15px;
+}
+.generate:hover,
+.generate:active,
+.alg:hover,
+.alg:focus,
+.alg:active {
+  background: red;
+  outline: none;
+}
+#generate:focus {
+  outline: none;
+}
+.chart {
+  position: absolute;
+  background: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  left: 180px;
+  width: 86%;
+  height: 100vh;
+  overflow: hidden;
+}
+@media only screen and (max-width: 600px) {
+  .chart {
+    width: 62%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .chart {
+    width: 67%;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+.butt_locked {
+  background: rgb(126, 126, 126);
+  color: white;
+  height: 6vh;
+  margin-top: 5px;
+  float: left;
+  padding: 5px;
+  left: 10px;
+  width: 160px;
+  border: 3px solid rgb(255, 255, 255);
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+.butt_selected {
+  background: red;
+  outline: none;
+  color: white;
+  height: 6vh;
+  margin-top: 5px;
+  float: left;
+  padding: 5px;
+  left: 10px;
+  width: 160px;
+  border: 3px solid rgb(255, 255, 255);
+  cursor: pointer;
+  border-radius: 15px;
+}
+.butt_unselected {
+  background: rgb(0, 77, 0);
+  color: white;
+  height: 6vh;
+  margin-top: 5px;
+  float: left;
+  padding: 5px;
+  left: 10px;
+  width: 160px;
+  border: 3px solid rgb(255, 255, 255);
+  cursor: pointer;
+  border-radius: 15px;
+}
